@@ -161,5 +161,20 @@ public class MainActivity extends AppCompatActivity {
                 resultView.setText(resultView.getText().toString() + "0");
             }
         });
+
+        ceButton = (Button)findViewById(R.id.ceButton);
+        ceButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                resultView.setText("0");
+            }
+        });
+        cButton = (Button)findViewById(R.id.cButton);
+        cButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                resultView.setText("0");
+            }
+        });
     }
 }
